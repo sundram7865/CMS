@@ -14,7 +14,7 @@ const SpecialityMenu = () => {
                         <p>{item.speciality}</p>
                     </Link>
                 ))}
-            </div>
+            </div> 
         </div>
     )
 }
