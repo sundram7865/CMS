@@ -14,7 +14,7 @@ const AppContextProvider = (props) => {
     const [userData, setUserData] = useState(false)
 
     // Getting Doctors using API
-    const getDoctosData = async () => {
+    const getDoctorsData = async () => {
 
         try {
 
