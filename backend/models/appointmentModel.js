@@ -1,18 +1,18 @@
-import mongoose from "mongoose"
+ const loadUserProfileData = async () => {
 
-const appointmentSchema = new mongoose.Schema({
-    userId: { type: String, required: true },
-    docId: { type: String, required: true },
-    slotDate: { type: String, required: true },
-    slotTime: { type: String, required: true },
-    userData: { type: Object, required: true },
-    docData: { type: Object, required: true },
-    amount: { type: Number, required: true },
-    date: { type: Number, required: true },
-    cancelled: { type: Boolean, default: false },
-    payment: { type: Boolean, default: false },
-    isCompleted: { type: Boolean, default: false }
-})
+        try {
 
-const appointmentModel = mongoose.models.appointment || mongoose.model("appointment", appointmentSchema)
-export default appointmentModel
+            const { data } = await axios.get(backendUrl + '/api/user/get-profile', { headers: { token } })
+
+            if (data.success) {
+                setUserData(data.userData)
+            } else {
+                toast.error(data.message)
+            }
+
+        } catch (error) {
+            console.log(error)
+            toast.error(error.message)
+        }
+
+    }
