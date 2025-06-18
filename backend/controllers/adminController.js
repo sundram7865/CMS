@@ -51,7 +51,7 @@ const appointmentCancel = async (req, res) => {
         res.json({ success: true, message: 'Appointment Cancelled' })
 
     } catch (error) {
-      
+        console.log(error)
         res.json({ success: false, message: error.message })
     }
 
