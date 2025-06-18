@@ -180,7 +180,7 @@ const doctorDashboard = async (req, res) => {
             appointments: appointments.length,
             patients: patients.length,
             latestAppointments: appointments.reverse()
-        }
+         }
 
         res.json({ success: true, dashData })
 
