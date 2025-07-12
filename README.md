@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://img.icons8.com/external-flat-icons-inmotus-design/67/000000/external-hospital-medical-flat-icons-inmotus-design.png" width="80" height="80" alt="Doclino Logo" />
+  <img src="frontend/src/assets/logo1234.png" width="120" height="1200" alt="Doclino Logo" />
   <h1>Doclino CMS</h1>
   <p><strong>Doctor Appointment & Management System</strong></p>
   <p>A full-stack medical CMS platform with role-based access for patients, doctors, and admins.</p>
